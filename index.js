@@ -16,7 +16,7 @@ app.use((req, res, next) => {
 const port = process.env.PORT || 3000;
 
 // POST method endpoint
-app.post('/api/data', (req, res) => {
+app.post('/bfhl', (req, res) => {
     const data = req.body.data;
 
     if (!Array.isArray(data)) {
@@ -47,7 +47,7 @@ function getHighestLowercaseAlphabet(array) {
 }
 
 // GET method endpoint
-app.get('/api/operation_code', (req, res) => {
+app.get('/bfhl', (req, res) => {
     res.json({ operation_code: '1' });
 });
 
